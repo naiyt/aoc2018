@@ -1,0 +1,5 @@
+Super simple starting problem. Just convert string input into an array of integers and sum the array.
+O(N) runtime and O(1) space. The one potential edge case is an empty string / array. For this problem
+I decided to handle the actual string conversion outside of the solution method to keep the responsibility
+of the solution self contained. Future solutions might take a different approach, if the string parsing
+is more complex, or more tightly coupled with the solution.
