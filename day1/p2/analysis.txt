@@ -1,0 +1,10 @@
+Already a more interesting problem than the previous one. In fact, I don't even really know
+how to do big o analysis of this one. For one, I don't know if there's a mathematical way
+to tell if a repeating cycle of summed frequencies will ever show a duplicate. (The two
+scenarios where you DEFINITELY know it's not possible is if all values are positive or negative).
+So at least with my current algorithm, for certain inputs I think it's possible that it could run
+forever (which is why I put in the max_iterations).
+
+This is a bit of a play on the "detect duplicate values in this array" problem. That can be solved
+without using the extra space for a hash table with some clever XOR-ing. There's probably a similarly
+clever solution for this problem as well that I'm just not thinking of.
