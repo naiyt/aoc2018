@@ -1,0 +1,16 @@
+The bruteforce solution is pretty simple and straightforward (but understandably slow) - iterate through each string, then iterate through each character, comparing it to every other character in that position in every other string.
+
+I had a bit of trouble thinking up a good fast solution, so I read this: https://www.reddit.com/r/adventofcode/comments/a2damm/2018_day2_part_2_a_linear_time_solution/eaxco3u/
+
+The downside of this more efficient solution is memory usage of course, using O(k * n) memory (where k is the length of the ids and n is the number of rows). It does perform fast though.
+
+For 20,000 rows with strings of length 32 in a problem with no solution, these are the results:
+
+=============================================================
+Benchmarking 1 times...
+                 user     system      total        real
+Fast         0.940000   0.060000   1.000000 (  0.861588)
+Bruteforce   48.760000   0.320000   49.080000 (  50.745067)
+=============================================================
+
+There's probably some much more clever dynamic programming or tree based solutions that wouldn't use nearly as much memory. With 1,000,000 rows it chewed through about 3GB worth of memory/
