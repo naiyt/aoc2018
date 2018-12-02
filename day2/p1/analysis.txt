@@ -1,0 +1,3 @@
+Nothing too weird here. Just iterate through each id and create a frequency hash of character appearances. Afterwards, determine if there are any 2's or 3's in the frequency hash, and increment the corresponding count of twos and threes.
+
+Runtime is O(N * L) where N is the number of ids and L is the length of an id. This is assuming that each id is of a constant length, which appears to be the case from the problem input. It also allocates O(N * L) extra space for the frequency hashes. (Although you could maybe make the argument that it uses O(L) extra space, since the hashes should get garbage collected.)
