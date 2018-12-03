@@ -1,0 +1,7 @@
+The main difficulty with this one is just the claim string parsing. Need to make sure you cover
+the invalid cases, and convert the 4 necessary strings to integers.
+
+The actual algorithm is simple, and runs in O(N), where N is the number of specified squares.
+One hole in this solution is that if the fabric happens to be over 1000 x 1000 it will get
+an out of bounds error. Would need to dynamically make it bigger where necessary, or alternatively
+do a pre-parse of all claims and find the max x and y, and then generate the fabric based off of that.
