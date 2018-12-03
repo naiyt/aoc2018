@@ -1,0 +1,3 @@
+Pretty simple problem building directly off of P1. Same basic algorithm, but we iterate through
+the claims a second time and try to find the one that only has 1 for each of its positions in
+the fabric. Runs in O(2N) this time, but we cut off the constant, so it's still a O(N) algorithm.
