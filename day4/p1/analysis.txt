@@ -1,0 +1,8 @@
+This problem is interesting from an input validation standpoint, as there are a lot of edge cases.
+(Is every row formatted properly? Are the dates valid? Do the waking up / falling asleep rows
+follow the proper pattern? Are the guard's schedule's all properly aligned?)
+
+I decided against getting too deep into input validation on this, because I don't want to spend
+hours on the problem. Run time is just O(N), extra space is an array of 60 32 bit integers for each
+guard. The main algorithmically interesting thing is keeping track of the falling asleep / waking up
+flags as we iterate through our list of records.
