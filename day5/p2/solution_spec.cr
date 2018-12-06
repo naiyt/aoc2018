@@ -3,10 +3,10 @@ require "./solution"
 
 describe "Day 5 Problem 1" do
   it "works with the sample input" do
-    resulting_polymer_length_fast("dabAcCaCBAcCcaDA").should eq(10)
+    shortest_possible_polymer("dabAcCaCBAcCcaDA").should eq(4)
   end
 
   it "generates the correct solution for my problem input" do
-    resulting_polymer_length_fast(File.read("input.txt")).should eq(11042)
+    shortest_possible_polymer(File.read("input.txt")).should eq(6872)
   end
 end
