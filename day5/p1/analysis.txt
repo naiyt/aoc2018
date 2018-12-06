@@ -1,0 +1,5 @@
+The bruteforce solution continously runs through the array until no more reactions take place on an iteration.
+The fast algorithm uses a two pointer approach so that we just iterate through the array once, deleting elements
+as they catalyze. The fast algorithm could probably be made even faster with a different approach than `.delete_at`,
+because that's going to have to reposition up to N elements in an array for every delete, which is a bit of a bottleneck.
+Still faster than the bruteforce, and could be optimized even more.
