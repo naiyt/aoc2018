@@ -1,0 +1,4 @@
+This part was significantly simpler than Part 1. Or at least it was for me -- its possible
+I overcomplicated Part 1. This one was less code, and much easier to reason about. Runtime
+should be the same as Part 1 -- O(x * y * z), where x is the width of the matrix, y is the
+height of the matrix, and z is the number of coordinates.
