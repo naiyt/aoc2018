@@ -1,0 +1,11 @@
+I haven't had a ton of time to make this solution super elegant, but the current solution
+works, and is decently fast. I tend to find matrix manipulation algorithms can get hairy and
+difficult to understand fairly quickly (which could maybe be somewhat alleviated with a few
+simple objects, that make what you're manipulating slightly more clear).
+
+Runtime should be O(x * y * z), where x is the width of the matrix, y is the height of the matrix,
+and z is the number of coordinates. We calculate the Manhattan Distance between each element in the
+matrix and each coordinate (which is a simple constant time formula), and keep track of the area as
+we go (marking it as -1 if it hits a boundry, because that means it extends out infinitely).
+
+It seems to be a little slow, so given more time I'm sure I could optimize it more.
