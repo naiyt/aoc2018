@@ -1,0 +1,10 @@
+My solution just represents the graph as two classes - a Node and Graph class. A node instance has a value,
+and keeps track of the next_nodes and its own pre-requisite nodes. The Graph just keeps track of values we've
+already used, and the current head nodes (which are nodes that either had no pre-reqs, or have had all their
+pre-requisites fulfilled). When we want to select the next node, the graph just sorts the head nodes by their values,
+snags the first one, and then adds any of that node's next_nodes that have had all their pre-requisites fulfilled to
+head_nodes. We then just pop values off the graph until there are none left.
+
+Generally speaking this should run in O(N), as long as there aren't tons of head nodes at any given time (because we
+sort the array of head nodes). In these cases there are usually only a couple, so it shouldn't impact the runtime.
+If we were planning for worst case, though, we would want a more efficient way to track the alphabetically first node.
