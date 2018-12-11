@@ -1,0 +1,6 @@
+Didn't spend a ton of time on this solution, and I'm sure it could be a lot faster. The biggest
+problem is that I'm actually manually ticking, and iterating through the loop for every "second",
+and then checking to see the status of workers, and queueing new nodes as workers become available.
+There's probably a smart solution that doesn't require actually doing that. On top of that, there's
+a lot of work in each iteration that could be optimized. Still, this is fast enough for the problem input
+(< 1.5ms in release mode).
