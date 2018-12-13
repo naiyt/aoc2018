@@ -1,0 +1,18 @@
+The initial thing that threw me off on this problem was how to find the length of the non-metadata part
+of the nodes. My solution ended up being recursively traversing through the children, until you
+reach one with no other children. You know the length of that one: it's just 2 + the metadata size.
+So you bubble up that length to the parent, which adds that to the sum of its own length. Once you've
+iterated through all the children, you know that node's length, and you know which values are metadata.
+We add those metadata values to an array, and bubble those up. The final solution returns the length of
+the top node and a list of all metadata nodes, so you just add them together to get the final solution.
+
+The example visualization was a little confusing. I was trying to line up the number of dashes with the
+number of elements in the node, but that's not correct. I found it easier to reason about it when it's
+visualized like this:
+
+02 03 00 03 10 11 12 01 01 00 01 99 02 01 01 02
+AA -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+      BB -- -- -- -- CC -- -- -- -- --
+                           DD -- --
+
+In this example, each double dash represents a portion of the node.
