@@ -1,0 +1,2 @@
+Once you wrap your mind around the problem description, this one isn't too hard, conceptually.
+The main difficulty is in managing the array wrapping and dealing with off by one errors.
