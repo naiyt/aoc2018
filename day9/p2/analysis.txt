@@ -1,0 +1,10 @@
+The previous solution is way too slow for a 100x multiplier. Everytime we insert or
+delete a marble from the list, we have to move up to N entries in the array, which
+is a very expensive operation. The natural solution is to switch to using a doubly
+linked list, so that insertions and deletions happen in O(1). By having the tail node
+point back to the head node, some of the logic has also been simplified. I don't
+have to worry about recalculating the offset when you hit the end of the list, because
+it will just naturally wrap back around to the beginning.
+
+I'm sure there are even more micro-optimizations, but with a 100x multiplier this solution
+now runs in ~400ms in release mode.
