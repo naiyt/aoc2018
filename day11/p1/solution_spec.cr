@@ -7,5 +7,6 @@ describe "Day 11 Problem 1" do
   end
 
   it "generates the correct solution for my problem input" do
+    chronal_charge(File.read("input.txt").to_i).should eq({233, 36})
   end
 end

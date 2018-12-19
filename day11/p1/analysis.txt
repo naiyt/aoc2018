@@ -1,0 +1,7 @@
+This solution just iterates through each cell in the grid, calculates its powerlevel, and then calculates the
+power level of the 3x3 block starting at that point. Uses some dynamic programming to make sure that the power_level
+is only calculated once for each cell, even when we iterate through all of the adjacent cells.
+
+Runtime is O(N) (where N is the number of cells in the grid), because we only calculate the power level once for every N. We do have to check
+the power level of the block starting at (x,y), but those should be simple array accesses in situations
+where the power level has already been calculated.
