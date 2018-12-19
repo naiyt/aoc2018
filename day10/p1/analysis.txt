@@ -1,0 +1,4 @@
+My solution just used a super simple way of checking to see if message might be visible by looking at the number of adjacent x and y
+values. When they get over a certain number, it's possible that the stars have started converging, so I print out the current
+starfield, and ask you if your message is present. I'm sure there are cooler and faster ways to accomplish the same thing, but
+this worked fine.

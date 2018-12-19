@@ -1,0 +1,1 @@
+I had already implemented this as part of Problem 1, when I kept track of the number of iterations.
