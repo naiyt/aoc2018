@@ -1,0 +1,7 @@
+This solution wasn't mine. After several hours of failure, I ended up looking on Reddit,
+and got pointed towards a Summed-area table: https://en.wikipedia.org/wiki/Summed-area_table
+
+Really clever solution that I would have never thought of. My solution(s) were recursive
+and memoized, but no amount of dynamic programming I was throwing at the problem was making
+it fast enough. This solution runs all 3 problems in under 200ms in release mode, so that's
+pretty impressive.
