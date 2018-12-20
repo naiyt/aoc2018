@@ -1,0 +1,3 @@
+This is pretty similar to the Game of Life, except in one dimension, and with custom rules.
+The main thing I had to be careful with on this solution was dealing with expanding the board
+out to the left and right as necessary.
