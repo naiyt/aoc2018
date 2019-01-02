@@ -1,0 +1,2 @@
+The main difficulty with this one was getting all the directional turning down properly,
+so that all the corner and intersection turns happened properly.
