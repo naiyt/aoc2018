@@ -1,0 +1,6 @@
+This one was tricky, and I honestly don't remember a lot of what I did. I did a bunch of work on it
+before the Christmas break, and didn't pick it back up until now. I optimized my solution from P1 as much as
+possible, but that still was not anywhere near efficient enough for 50 billion. I ended up looking at
+solutions on Reddit, and sounds like the answer was that a pattern emerges after a certain number of iterations.
+So you just have to calculate a certain number of generations until the pattern emerges, and use that to find the
+repeating difference in values every generation.
