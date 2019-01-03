@@ -1,0 +1,4 @@
+A pretty simple extension of P1 that took me longer than it should have, due to me
+not properly removing both of the destroyed carts. Could likely be optimized in a few
+ways, like not iterating through the entire map during every click, and instead only
+iterating through the active carts.
