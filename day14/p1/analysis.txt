@@ -1,0 +1,7 @@
+This one was pretty interesting (although I'm not a huge fan of the overly
+convuluted problem descriptions on problems like this). Initially looked very
+similar to a Fibonacci style problem, with the added complexity of having
+to dynamically move your two pointers through the array. My initial implementation
+was recursive (since that's the natural place to start with a sequence problem),
+but that resulted in a stack size problem for my problem input. The iterative solution
+was pretty much just a simple as the recursive one, though, which was nice.
