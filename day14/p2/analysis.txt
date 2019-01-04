@@ -1,0 +1,5 @@
+This one seemed like a straightforward extension of Problem 1. For the most part it was,
+except for one edge case that tripped me up: when you add an iterations new recipes, you
+may add the problem input AND some extra values. So if you just check for a match at the end
+of the array once every iteration, then you might miss it. I eventually got a solution
+with that strategy, but the answer was incorrect (and too high).
