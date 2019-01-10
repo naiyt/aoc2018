@@ -1,0 +1,21 @@
+What a relief when I finally got the right answer on this one! Definitely the hardest
+problem yet, for a few reasons. Some observationss:
+
+* The base pathfinding itself wasn't too difficult. I just used Dijkstra's -- it's been a
+  couple years since I've implemented that algorithm, so I just referenced Wikipedia. There
+  were a few gotchas, but it wasn't that hard.
+* The biggest pain point I'm running into with Crystal is the poor debugging. With this
+  problem in particular, I actually solved it in Ruby in parallel, for the sole purpose of
+  being able to actually properly debug (since there were so many details to get right).
+* The number of small details on this problem is where the primary difficulty came from.
+  Most of them were likely necessary in order to have a deterministic outcome with the
+  pathfinding, but it was still very frustrating. (I do kind of wish the problem description
+  was written less like a novel and more like a bulleted list of requirements in this case --
+  it was tricky to tease out every single little detail). It was rather difficult to get ALL
+  of the tie conditions working properly. And most of those conditions weren't covered by
+  the sample test cases.
+* My solution has ended up quite messy at this point. I could clean it up for sure, but after
+  spending hours on this problem I have no motivation to do so.
+* My solution is fairly slow. It runs decently in release mode with Crystal, but it's pretty
+  much unbearably slow in Ruby, for big input sizes. I can see a few places to optimize, but again,
+  way too tired right now to worry about that.
