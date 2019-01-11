@@ -1,0 +1,4 @@
+Pretty easy expansion after the horror of P1. My solution is still awfully
+slow, meaning it took about 3 minutes to generate the answer in release
+mode with Crystal. Could be fun to optimize this solution at some point,
+but for now I just want to sleep!
